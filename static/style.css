@@ -1,0 +1,64 @@
+html {
+  font-family: "Hiragino Kaku Gothic Pro", "Yu Gothic", "Meiryo", sans-serif;
+  font-size: 100%;
+  line-height: 1.8em;
+}
+
+.titlebar {
+  border-left:5px solid #007bff; /*線の設定*/
+  padding:2px 8px; /*余白の設定*/
+  /* box-sizing: content-box;
+  width: 10hv;
+  height: 30px;
+  background-color: rgb(255, 222, 173);
+  margin-bottom: 20px;
+  padding: 5px 20px 0;*/
+}
+
+.title {
+  box-sizing: content-box;
+  display: flex;
+  width: 320hv;
+  float: left;
+  line-height: 1.3em;
+  padding: 5px 20px 0;
+}
+
+.maintext {
+  display: flex;
+  margin: 10px 50px 10px 0;
+  float: left;
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+.image {
+  box-sizing: content-box;
+  display: flex;
+}
+
+
+#tags {
+  background-color: rgb(178, 232, 241);
+  padding: 5px 0px 5px 30px;
+  margin: 10px 0 ;
+  box-shadow: 0 4px 4px 0 rgb(194, 194, 194);
+  display: flex;
+  align-items: center;
+}
+#subjects {
+  background-color: rgb(171, 230, 171);
+  padding: 5px 0px 5px 30px;
+  margin: 10px 0 ;
+  box-shadow: 0 4px 4px 0 rgb(194, 194, 194);
+  display: flex;
+  align-items: center;
+}
+#games {
+  background-color: rgb(250, 229, 161);
+  padding: 5px 0px 5px 30px;
+  margin: 10px 0 ;
+  box-shadow: 0 4px 4px 0 rgb(194, 194, 194);
+  display: flex;
+  align-items: center;
+}
