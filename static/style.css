@@ -42,9 +42,8 @@ html {
   line-height: 1.8em;
 }
 
-.resizeimage image {
-  width: 100vm;
-
+.resizeimage  {
+  width: 100vm ;
 }
 
 
