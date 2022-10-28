@@ -43,7 +43,9 @@ html {
 }
 
 .resizeimage {
-  width: 420px ;
+  display: block;
+  width: 100%;
+  margin: auto;
 }
 
 
