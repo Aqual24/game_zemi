@@ -5,14 +5,24 @@ html {
 }
 
 .titlebar {
-  border-left:5px solid #007bff; /*線の設定*/
-  padding:2px 8px; /*余白の設定*/
-  /* box-sizing: content-box;
-  width: 10hv;
-  height: 30px;
-  background-color: rgb(255, 222, 173);
-  margin-bottom: 20px;
-  padding: 5px 20px 0;*/
+  border-left: 5px solid #007bff;
+  /*線の設定*/
+  padding: 2px 8px;
+  /*余白の設定*/
+}
+
+.titlebar_tag {
+  border-left: 5px solid #007bff;
+  /*線の設定*/
+  padding: 2px 8px;
+  /*余白の設定*/
+}
+
+.titlebar_sub {
+  border-left: 5px solid #ff314d;
+  /*線の設定*/
+  padding: 2px 8px;
+  /*余白の設定*/
 }
 
 .title {
@@ -32,32 +42,35 @@ html {
   line-height: 1.8em;
 }
 
-.image {
-  box-sizing: content-box;
-  display: flex;
+.resizeimage image {
+  width: 100%;
+  padding: 5px 20px;
+
 }
 
 
 #tags {
   background-color: rgb(178, 232, 241);
   padding: 5px 0px 5px 30px;
-  margin: 10px 0 ;
+  margin: 10px 0;
   box-shadow: 0 4px 4px 0 rgb(194, 194, 194);
   display: flex;
   align-items: center;
 }
+
 #subjects {
   background-color: rgb(171, 230, 171);
   padding: 5px 0px 5px 30px;
-  margin: 10px 0 ;
+  margin: 10px 0;
   box-shadow: 0 4px 4px 0 rgb(194, 194, 194);
   display: flex;
   align-items: center;
 }
+
 #games {
   background-color: rgb(250, 229, 161);
   padding: 5px 0px 5px 30px;
-  margin: 10px 0 ;
+  margin: 10px 0;
   box-shadow: 0 4px 4px 0 rgb(194, 194, 194);
   display: flex;
   align-items: center;
