@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>タグ一覧</title>
+    <meta http-equiv="Content-type" content="text/html; charset=" UTF-8">
+    <meta name="viewport" content="width=320,
+                       height=480,
+                       initial-scale=1.0,
+                       minimum-scale=1.0,
+                       maximum-scale=2.0,
+                       user-scalable=yes" />
+    <!--スマホサイズ-->
+
+    <link rel="stylesheet" type="text/css" href="static/style.css"> <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script> --> <!-- bootstrap -->
+    <script>$('.navbar-nav>li>a , .dropdown-menu>a').on('click', function () {
+        if (this.id != 'navbarDropdown') {
+            $('.navbar-collapse').collapse('hide');
+        }
+    });</script>
+</head>
+
+<body>
+    <!-- ヘッダーナビここから-->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbar"
+                aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <a class="navbar-brand" href="#">ブランド</a>
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <a class="navbar-brand" href="#">ゲーム一覧</a>
+                </ul>
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <a class="navbar-brand" href="#">教科一覧</a>
+                </ul>
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <a class="navbar-brand" href="#">キーワード一覧</a>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--ヘッダーナビここまで -->
+
+    <h1>おはよう</h1>
+
+
+    <div class="container">
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        創造性
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample" >
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        協調性
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        自然理解
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        デジタル
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        社会理解
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        目標設定
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        空間把握
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        思考力
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row justify-content-center">
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="card col-auto m-1" style="width: 25rem;">
+                                <img src="..." alt="カードの画像" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">ゲームのタイトル</h5>
+                                    <p class="card-text">見出し</p>
+                                    <a href="#" class="btn btn-primary">本文を読む</a>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="カードの画像" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ゲームのタイトル</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="#" class="btn btn-primary">本文を読む</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
