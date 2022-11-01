@@ -9,7 +9,7 @@ body {
 }
 
 .titlebar {
-  border-left: 5px solid #ffc400;
+  border-left: 5px solid #ff9900;
   /*線の設定*/
   padding: 2px 8px;
   /*余白の設定*/
@@ -26,6 +26,14 @@ body {
 
 .titlebar_sub {
   border-left: 5px solid #ff314d;
+  /*線の設定*/
+  padding: 2px 8px;
+  /*余白の設定*/
+  margin: 8px 0;
+}
+
+.titlebar_game {
+  border-left: 5px solid #6aaf55;
   /*線の設定*/
   padding: 2px 8px;
   /*余白の設定*/
@@ -53,3 +61,6 @@ body {
   display: block;
   width: 100%;
 }
+
+
+
