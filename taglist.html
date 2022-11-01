@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>タグ一覧</title>
+    <meta http-equiv="Content-type" content="text/html; charset=" UTF-8">
+    <meta name="viewport" content="width=320,
+                       height=480,
+                       initial-scale=1.0,
+                       minimum-scale=1.0,
+                       maximum-scale=2.0,
+                       user-scalable=yes" />
+    <!--スマホサイズ-->
+
+    <link rel="stylesheet" type="text/css" href="static/style.css"> <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script> -->
+    <!-- bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>$('.navbar-nav>li>a , .dropdown-menu>a').on('click', function () {
+            if (this.id != 'navbarDropdown') {
+                $('.navbar-collapse').collapse('hide');
+            }
+        });</script>
+        <script>$(function () {
+            // URLのハッシュ部分（id）を取得
+            const urlHash = location.hash;
+            // そのidを持つ要素がなかったら処理を抜ける
+            if (!$(urlHash).length) return;
+          
+            // アコーディオンの要素を開く処理
+            $(urlHash)
+              .find('.accordion')
+              .addClass('is-show')
+              .next()
+              .show();
+          });</script>
+</head>
+
+<body>
+    <!-- ヘッダーナビここから-->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Navbar"
+                aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <a class="navbar-brand" href="index.html">ホーム</a>
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <a class="navbar-brand" href="tagulist.html">タグ一覧</a>
+                </ul>
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <a class="navbar-brand" href="#">ゲーム一覧</a>
+                </ul>
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <a class="navbar-brand" href="#">教科一覧</a>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--ヘッダーナビここまで -->
+    <div class="row justify-content-center">
+        <div class="col-10 mb-3 justify-content-center">
+            <h1 class="titlebar_tag">タグ一覧</h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item" id="tag1">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        創造性
+                    </button>
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card-deck">
+                            <div class="row justify-content-center">
+                                <!--あつもり-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw434b46e5/products/D70010000027618/heroBanner/e607c120cab2c59c5ebb491deaa1095e750ad795e8e1129c8f4f4f5bdefc6a92.jpg?sw=1368&strip=false"
+                                        alt="あつまれどうぶつの森" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">あつまれどうぶつの森</h5>
+                                        <p class="card-text">詳細</p>
+                                        <a href="atsumori.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Astroneer-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw2637044d/products/D70010000045644/heroBanner/27b7c212e9900ebbf3fba4c6cb0d0d137e7d0be05f86ab5a954bb7d161e7fb64.jpg?sw=1368&strip=false"
+                                        alt="Astroneer" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Astroneer</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="astroneer.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--原神-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://webstatic.hoyoverse.com/upload/contentweb/2022/09/16/2e8e33596966323fa8db0126281d8c64_6313115562425245137.jpg"
+                                        alt="原神" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">原神</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="genshin.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Cities: Skylines-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw675c4a1c/products/D70010000011967/heroBanner/0d9cac04f23ec18cb1a355d2f1c3eb77a4462eab4bfea2d995a132912f90eb06.jpg?sw=1368&strip=false"
+                                        alt="Cities: Skylines" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">シティーズ：スカイライン</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="cities.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Simcity Buildit-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/ja-jp/migrated-images/2017/01/c-simcity-buildit-scbi-game-splash.jpg.adapt.crop16x9.1023w.jpg"
+                                        alt="Simcity Buildit" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Simcity Buildit</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="simcity.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--ポケモン-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwf2e37644/products/D70010000039944/heroBanner/4a7f83b7bd7978faa7b92797282ff093d99d5204c60b937a2182e0c2118399fe.jpg?sw=1368&strip=false"
+                                        alt="ポケモンシリーズ" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ポケモンシリーズ</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="pokemon.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Minecraft-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwa3d97003/products/D70010000000965/heroBanner/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f.jpg?sw=1368&strip=false"
+                                        alt="Minecraft" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Minecraft</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="minecraft.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--レイトン-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwfd1f4402/products/D70070000012408/heroBanner/d60a45a9e8db5d12e8f469e3d87fd539a8996292b1463910019d1add4bb3740c.jpg?sw=1368&strip=false"
+                                        alt="レイトン教授シリーズ" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">レイトン教授シリーズ</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="layton.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        協調性
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card-deck">
+                            <div class="row justify-content-center">
+                                <!--Astroneer-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw2637044d/products/D70010000045644/heroBanner/27b7c212e9900ebbf3fba4c6cb0d0d137e7d0be05f86ab5a954bb7d161e7fb64.jpg?sw=1368&strip=false"
+                                        alt="Astroneer" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Astroneer</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="astroneer.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--スプラトゥーン-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwf8d74577/products/D70010000046394/heroBanner/be6eb6c8e642eb104ab329de6fb840c0ba27106659d4c1ba054a38208f3200aa.jpg?sw=1368&strip=false"
+                                        alt="スプラトゥーン3" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">スプラトゥーン3</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="splatoon.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--ポケモン-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwf2e37644/products/D70010000039944/heroBanner/4a7f83b7bd7978faa7b92797282ff093d99d5204c60b937a2182e0c2118399fe.jpg?sw=1368&strip=false"
+                                        alt="ポケモンシリーズ" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ポケモンシリーズ</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="pokemon.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--原神-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://webstatic.hoyoverse.com/upload/contentweb/2022/09/16/2e8e33596966323fa8db0126281d8c64_6313115562425245137.jpg"
+                                        alt="原神" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">原神</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="genshin.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        自然理解
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card-deck">
+                            <div class="row justify-content-center">
+                                <!--あつもり-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw434b46e5/products/D70010000027618/heroBanner/e607c120cab2c59c5ebb491deaa1095e750ad795e8e1129c8f4f4f5bdefc6a92.jpg?sw=1368&strip=false"
+                                        alt="あつまれどうぶつの森" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">あつまれどうぶつの森</h5>
+                                        <p class="card-text">詳細</p>
+                                        <a href="atsumori.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--原神-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://webstatic.hoyoverse.com/upload/contentweb/2022/09/16/2e8e33596966323fa8db0126281d8c64_6313115562425245137.jpg"
+                                        alt="原神" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">原神</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="genshin.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Cities: Skylines-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw675c4a1c/products/D70010000011967/heroBanner/0d9cac04f23ec18cb1a355d2f1c3eb77a4462eab4bfea2d995a132912f90eb06.jpg?sw=1368&strip=false"
+                                        alt="Cities: Skylines" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">シティーズ：スカイライン</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="cities.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--天穂のサクナヒメ-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw77c70ec5/products/D70010000029215/heroBanner/38cba0cc2eeefb85744be23f831cf553e4d3e38591b28031a49d94fab82eb4bc.jpg?sw=1368&strip=false"
+                                        alt="天穂のサクナヒメ" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">天穂のサクナヒメ</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="sakunahime.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Minecraft-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwa3d97003/products/D70010000000965/heroBanner/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f.jpg?sw=1368&strip=false"
+                                        alt="Minecraft" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Minecraft</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="minecraft.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--リングフィットアドベンチャー-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="リングフィットアドベンチャー" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">リングフィット アドベンチャー</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="ringfit.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        デジタル理解
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card-deck">
+                            <div class="row justify-content-center">
+                                <!--Minecraft-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwa3d97003/products/D70010000000965/heroBanner/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f.jpg?sw=1368&strip=false"
+                                        alt="Minecraft" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Minecraft</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="minecraft.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        社会・歴史理解
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card-deck">
+                            <div class="row justify-content-center">
+                                <!--あつもり-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw434b46e5/products/D70010000027618/heroBanner/e607c120cab2c59c5ebb491deaa1095e750ad795e8e1129c8f4f4f5bdefc6a92.jpg?sw=1368&strip=false"
+                                        alt="あつまれどうぶつの森" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">あつまれどうぶつの森</h5>
+                                        <p class="card-text">詳細</p>
+                                        <a href="atsumori.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--原神-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://webstatic.hoyoverse.com/upload/contentweb/2022/09/16/2e8e33596966323fa8db0126281d8c64_6313115562425245137.jpg"
+                                        alt="原神" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">原神</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="genshin.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Cities: Skylines-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw675c4a1c/products/D70010000011967/heroBanner/0d9cac04f23ec18cb1a355d2f1c3eb77a4462eab4bfea2d995a132912f90eb06.jpg?sw=1368&strip=false"
+                                        alt="Cities: Skylines" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">シティーズ：スカイライン</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="cities.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Simcity Buildit-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/ja-jp/migrated-images/2017/01/c-simcity-buildit-scbi-game-splash.jpg.adapt.crop16x9.1023w.jpg"
+                                        alt="Simcity Buildit" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Simcity Buildit</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="simcity.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--サクナヒメ-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw77c70ec5/products/D70010000029215/heroBanner/38cba0cc2eeefb85744be23f831cf553e4d3e38591b28031a49d94fab82eb4bc.jpg?sw=1368&strip=false"" alt="
+                                        サクナヒメ" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">天穂のサクナヒメ</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="sakunahime.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--ポケモン-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwf2e37644/products/D70010000039944/heroBanner/4a7f83b7bd7978faa7b92797282ff093d99d5204c60b937a2182e0c2118399fe.jpg?sw=1368&strip=false"
+                                        alt="ポケモンシリーズ" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ポケモンシリーズ</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="pokemon.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--桃鉄-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw532092d8/products/D70010000018271/heroBanner/0eb0348faa2f3f7780ad0d58a9a7ed3d8f99d9f70148819831a019d311129006.jpg?sw=1368&strip=false"
+                                        alt="桃太郎電鉄" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">桃太郎電鉄 ～昭和 平成 令和も定番！～</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="momotetsu.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        目標設定
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card-deck">
+                            <div class="row justify-content-center">
+                                <!--Astroneer-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw2637044d/products/D70010000045644/heroBanner/27b7c212e9900ebbf3fba4c6cb0d0d137e7d0be05f86ab5a954bb7d161e7fb64.jpg?sw=1368&strip=false"
+                                        alt="Astroneer" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Astroneer</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="astroneer.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Cities: Skylines-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw675c4a1c/products/D70010000011967/heroBanner/0d9cac04f23ec18cb1a355d2f1c3eb77a4462eab4bfea2d995a132912f90eb06.jpg?sw=1368&strip=false"
+                                        alt="Cities: Skylines" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">シティーズ：スカイライン</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="cities.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Simcity Buildit-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/ja-jp/migrated-images/2017/01/c-simcity-buildit-scbi-game-splash.jpg.adapt.crop16x9.1023w.jpg"
+                                        alt="Simcity Buildit" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Simcity Buildit</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="simcity.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--天穂のサクナヒメ-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw77c70ec5/products/D70010000029215/heroBanner/38cba0cc2eeefb85744be23f831cf553e4d3e38591b28031a49d94fab82eb4bc.jpg?sw=1368&strip=false"
+                                        alt="天穂のサクナヒメ" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">天穂のサクナヒメ</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="sakunahime.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Minecraft-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwa3d97003/products/D70010000000965/heroBanner/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f.jpg?sw=1368&strip=false"
+                                        alt="Minecraft" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Minecraft</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="minecraft.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--リングフィットアドベンチャー-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="リングフィットアドベンチャー" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">リングフィット アドベンチャー</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="ringfit.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        空間把握
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card-deck">
+                            <div class="row justify-content-center">
+                                <!--あつもり-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw434b46e5/products/D70010000027618/heroBanner/e607c120cab2c59c5ebb491deaa1095e750ad795e8e1129c8f4f4f5bdefc6a92.jpg?sw=1368&strip=false"
+                                        alt="あつまれどうぶつの森" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">あつまれどうぶつの森</h5>
+                                        <p class="card-text">詳細</p>
+                                        <a href="atsumori.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Astroneer-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw2637044d/products/D70010000045644/heroBanner/27b7c212e9900ebbf3fba4c6cb0d0d137e7d0be05f86ab5a954bb7d161e7fb64.jpg?sw=1368&strip=false"
+                                        alt="Astroneer" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Astroneer</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="astroneer.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--原神-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://webstatic.hoyoverse.com/upload/contentweb/2022/09/16/2e8e33596966323fa8db0126281d8c64_6313115562425245137.jpg"
+                                        alt="原神" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">原神</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="genshin.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Cities: Skylines-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw675c4a1c/products/D70010000011967/heroBanner/0d9cac04f23ec18cb1a355d2f1c3eb77a4462eab4bfea2d995a132912f90eb06.jpg?sw=1368&strip=false"
+                                        alt="Cities: Skylines" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">シティーズ：スカイライン</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="cities.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Simcity Buildit-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/ja-jp/migrated-images/2017/01/c-simcity-buildit-scbi-game-splash.jpg.adapt.crop16x9.1023w.jpg"
+                                        alt="Simcity Buildit" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Simcity Buildit</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="simcity.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--スプラトゥーン-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwf8d74577/products/D70010000046394/heroBanner/be6eb6c8e642eb104ab329de6fb840c0ba27106659d4c1ba054a38208f3200aa.jpg?sw=1368&strip=false"
+                                        alt="スプラトゥーン3" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">スプラトゥーン3</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="splatoon.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Minecraft-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwa3d97003/products/D70010000000965/heroBanner/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f.jpg?sw=1368&strip=false"
+                                        alt="Minecraft" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Minecraft</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="minecraft.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--リングフィットアドベンチャー-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="..." alt="リングフィットアドベンチャー" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">リングフィット アドベンチャー</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="ringfit.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="accordion mt-2" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        思考力
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="card-deck">
+                            <div class="row justify-content-center">
+                                <!--あつもり-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw434b46e5/products/D70010000027618/heroBanner/e607c120cab2c59c5ebb491deaa1095e750ad795e8e1129c8f4f4f5bdefc6a92.jpg?sw=1368&strip=false"
+                                        alt="あつまれどうぶつの森" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">あつまれどうぶつの森</h5>
+                                        <p class="card-text">詳細</p>
+                                        <a href="atsumori.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Astroneer-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw2637044d/products/D70010000045644/heroBanner/27b7c212e9900ebbf3fba4c6cb0d0d137e7d0be05f86ab5a954bb7d161e7fb64.jpg?sw=1368&strip=false"
+                                        alt="Astroneer" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Astroneer</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="astroneer.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Cities: Skylines-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw675c4a1c/products/D70010000011967/heroBanner/0d9cac04f23ec18cb1a355d2f1c3eb77a4462eab4bfea2d995a132912f90eb06.jpg?sw=1368&strip=false"
+                                        alt="Cities: Skylines" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">シティーズ：スカイライン</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="cities.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Simcity Buildit-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://media.contentapi.ea.com/content/dam/eacom/ja-jp/migrated-images/2017/01/c-simcity-buildit-scbi-game-splash.jpg.adapt.crop16x9.1023w.jpg"
+                                        alt="Simcity Buildit" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Simcity Buildit</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="simcity.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+
+                                <!--スプラトゥーン-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwf8d74577/products/D70010000046394/heroBanner/be6eb6c8e642eb104ab329de6fb840c0ba27106659d4c1ba054a38208f3200aa.jpg?sw=1368&strip=false"
+                                        alt="スプラトゥーン3" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">スプラトゥーン3</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="splatoon.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--天穂のサクナヒメ-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw77c70ec5/products/D70010000029215/heroBanner/38cba0cc2eeefb85744be23f831cf553e4d3e38591b28031a49d94fab82eb4bc.jpg?sw=1368&strip=false"
+                                        alt="天穂のサクナヒメ" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">天穂のサクナヒメ</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="sakunahime.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--ポケモン-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwf2e37644/products/D70010000039944/heroBanner/4a7f83b7bd7978faa7b92797282ff093d99d5204c60b937a2182e0c2118399fe.jpg?sw=1368&strip=false"
+                                        alt="ポケモンシリーズ" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">ポケモンシリーズ</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="pokemon.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--Minecraft-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwa3d97003/products/D70010000000965/heroBanner/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f.jpg?sw=1368&strip=false"
+                                        alt="Minecraft" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Minecraft</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="minecraft.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                                <!--レイトン-->
+                                <div class="card col-auto m-1" style="width: 25rem;">
+                                    <img src="https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwfd1f4402/products/D70070000012408/heroBanner/d60a45a9e8db5d12e8f469e3d87fd539a8996292b1463910019d1add4bb3740c.jpg?sw=1368&strip=false"
+                                        alt="レイトン教授シリーズ" class="card-img-top">
+                                    <div class="card-body">
+                                        <h5 class="card-title">レイトン教授シリーズ</h5>
+                                        <p class="card-text">見出し</p>
+                                        <a href="layton.html" class="btn btn-primary">詳細</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

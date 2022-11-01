@@ -9,10 +9,11 @@ body {
 }
 
 .titlebar {
-  border-left: 5px solid #007bff;
+  border-left: 5px solid #ffc400;
   /*線の設定*/
   padding: 2px 8px;
   /*余白の設定*/
+  margin: 8px 0;
 }
 
 .titlebar_tag {
@@ -20,6 +21,7 @@ body {
   /*線の設定*/
   padding: 2px 8px;
   /*余白の設定*/
+  margin: 8px 0;
 }
 
 .titlebar_sub {
@@ -27,6 +29,7 @@ body {
   /*線の設定*/
   padding: 2px 8px;
   /*余白の設定*/
+  margin: 8px 0;
 }
 
 .title {
